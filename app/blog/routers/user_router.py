@@ -1,9 +1,9 @@
 from typing import List
 from fastapi import APIRouter,status, Depends
 from sqlalchemy.orm import Session
-from blog.database import get_db
-from blog.repository import user_repo
-from blog.schemas import ShowBlogList, ShowUser, User
+from ..database import get_db
+from ..repository import user_repo
+from ..schemas import ShowBlogList, ShowUser, User
 
 router = APIRouter(
     tags=['users'],

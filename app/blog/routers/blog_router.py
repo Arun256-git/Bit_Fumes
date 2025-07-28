@@ -1,10 +1,10 @@
 from typing import List
 from fastapi import APIRouter,status, Depends
 from sqlalchemy.orm import Session
-from blog.database import get_db
-from blog.oauth2 import get_current_user
-from blog.repository import blog_repo
-from blog.schemas import Blog, ShowBlog, User
+from ..database import get_db
+from ..oauth2 import get_current_user
+from ..repository import blog_repo
+from ..schemas import Blog, ShowBlog, User
 
 router = APIRouter(
     tags=['blogs'],

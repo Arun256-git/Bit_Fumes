@@ -1,8 +1,8 @@
 from fastapi import HTTPException
-from blog import models
+from .. import models
 from sqlalchemy.orm import Session
 
-from blog.hashing import Hash
+from ..hashing import Hash
 
 def get_all_users(db: Session):
     users = db.query(models.User).all()
