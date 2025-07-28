@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/Arun256-git/Python_FastAPI_Cloud.git'
+                git 'https://github.com/Arun256-git/Bit_Fumes.git'
             }
         }
 
