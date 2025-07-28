@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'arun256docker/fastapi-app:latest'
+        IMAGE_NAME = 'arun256docker/bitfumes_fastapi:latest'
     }
 
     stages {
